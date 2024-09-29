@@ -1,9 +1,11 @@
 import { createContext, useContext, useState } from "react";
 
+
 const Shopping = createContext({});
 
 const ShoppingProvider = ({ children }) => {
   const [items, setItems] = useState([]);
+  
     
     const getItems = (id) => {
         return items.find((item) => item.id === id) ?.quantity || 0 ;
@@ -44,9 +46,12 @@ const ShoppingProvider = ({ children }) => {
     const removeItem = (id) => {
         setItems((currentItems) => currentItems.filter((item) => item.id !== id))
     }
+
+    //reduce items
+    const getRduceItems = items.reduce((quantity, item) => item.quantity + quantity, 0);
   
   return (
-    <Shopping.Provider value={{items, getItems, increaseQu, decreaseQu, removeItem}}>
+    <Shopping.Provider value={{items, getItems, increaseQu, decreaseQu, removeItem, getRduceItems}}>
       { children }
     </Shopping.Provider>
   )

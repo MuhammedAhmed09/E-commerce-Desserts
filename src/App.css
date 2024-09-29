@@ -76,3 +76,16 @@
     font-weight: 700;
     margin-bottom: 4px;
 }
+
+/*Cart items*/
+.box-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-product .box-product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
