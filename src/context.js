@@ -8,7 +8,7 @@ const ShoppingProvider = ({ children }) => {
   
     
     const getItems = (id) => {
-        return items.find((item) => item.id === id) ?.quantity || 0 ;
+        return items.find((item) => item.id === id)?.quantity || 0 ;
     };
 
     const increaseQu = (id) => {

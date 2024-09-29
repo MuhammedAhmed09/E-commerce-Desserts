@@ -1,8 +1,7 @@
 import React from 'react'
 import { useShopping } from '../context'
 import CartItems from './CartItems';
-import formatCurrency from '../formatCurrency';
-import data from '../data.json';
+
 
 
 const Cart = () => {

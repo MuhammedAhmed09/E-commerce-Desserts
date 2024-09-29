@@ -31,7 +31,7 @@ const CartItems = ({id, quantity}) => {
           </div>
         </div>
         <div>
-          <i onClick={() => removeItem(id)} style={{ fontSize:'25px', fontWeight: '700' }}><IoIosCloseCircleOutline/></i>
+          <i onClick={() => removeItem(id)} style={{ fontSize:'25px', fontWeight: '700', cursor: 'pointer' }}><IoIosCloseCircleOutline/></i>
         </div>
       </>
       )}
